@@ -513,6 +513,9 @@ static const struct dev_pm_ops xhci_plat_pm_ops = {
 	.thaw		= xhci_plat_restore,
 	.poweroff	= xhci_plat_suspend,
 	.restore	= xhci_plat_restore,
+
+	SET_SYSTEM_SLEEP_PM_OPS(NULL, xhci_plat_resume)
+
 	SET_RUNTIME_PM_OPS(xhci_plat_runtime_suspend,
 			   xhci_plat_runtime_resume,
 			   xhci_plat_runtime_idle)
