@@ -110,3 +110,6 @@
 
 # required by sr100.ko
   spi_bus_type
+
+# required by us_prox.ko
+__iio_device_register
