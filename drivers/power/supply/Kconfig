@@ -436,6 +436,12 @@ config BQ2597X
 	help
 	  Say Y here to enable debugging dual fuel gauge debugging
 
+config MI_WIRELESS
+	tristate "mi wirless config"
+	depends on QTI_PMIC_GLINK
+	help
+	  Say Y here to enable mi wireless
+
 config CHARGER_88PM860X
 	tristate "Marvell 88PM860x Charger driver"
 	depends on MFD_88PM860X && BATTERY_88PM860X
